@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='keggpathwaygraphs',
-    version='',
+    version='1.0.0',
     packages=['keggpathwaygraphs'],
     url='https://github.com/mdparkes/keggpathwaygraphs',
     license='MIT',
