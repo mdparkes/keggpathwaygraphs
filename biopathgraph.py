@@ -20,7 +20,6 @@ do not provide unique information.
 from __future__ import annotations
 
 import Bio.KEGG.REST
-# import networkx as nx
 import os
 import pickle
 import re
