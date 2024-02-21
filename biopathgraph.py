@@ -513,7 +513,6 @@ if __name__ == "__main__":
     # C:    (01524 PlatDrugRes) ----------------------------------------------> (04115 p53Signaling)
     #                             (Edge implied by level C pathway maps)
     #
-    # Is the direction of the edges at each level sensible? Does the direction matter?
     level_b_adj = dict()
     for node_data1 in tqdm(level_b_dict.values(), total=len(level_b_dict), desc="Creating level B adjacency dict"):
         children1 = set(child_id for child_id in node_data1["children"])
@@ -543,9 +542,3 @@ if __name__ == "__main__":
         neighbors = set(level_a_dict.keys())
         neighbors.remove(node)
         level_a_adj[node] = neighbors
-
-    # # Do some graphing
-    # level_a_graph = construct_graph(level_a_dict, level_a_adj, level=3)
-    # level_b_graph = construct_graph(level_b_dict, level_b_adj, level=2)
-    # level_c_graph = construct_graph(level_c_dict, level_c_adj, level=1)
-    # level_d_graph = construct_graph(level_d_dict, level_d_adj, level=0)
