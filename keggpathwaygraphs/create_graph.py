@@ -11,7 +11,7 @@ modeling a latent representation of gene expression data using graph neural netw
 """
 import argparse
 import Bio.KEGG.REST
-import biopathgraph as bpg
+from . import biopathgraph as bpg
 import pickle
 import os
 import re
