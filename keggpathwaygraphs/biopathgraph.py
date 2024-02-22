@@ -27,9 +27,12 @@ import warnings
 import xml.etree.ElementTree as ETree
 
 from tqdm import tqdm
-from typing import Any, Dict, List, Tuple, Set
+from typing import Any, Dict, List, Set, Tuple, Union
 
-from custom_data_types import NodeInfoDict, AdjacencyDict
+
+# Custom types for type hints
+NodeInfoDict = Dict[str, Dict[str, Any]]
+AdjacencyDict = Dict[str, Union[Set[str], Set[Tuple[str, Tuple[str]]]]]
 
 
 def re_strip(string: str, pattern: str) -> str:
