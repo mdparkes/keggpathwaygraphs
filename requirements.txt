@@ -1,2 +1,2 @@
-bio~=1.5.9
+biopython~=1.8.3
 tqdm~=4.65.0
