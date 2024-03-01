@@ -4,7 +4,7 @@ setup(
     name='keggpathwaygraphs',
     version='1.0.0',
     packages=['keggpathwaygraphs'],
-    install_requires=['bio'],
+    install_requires=['biopython'],
     url='https://github.com/mdparkes/keggpathwaygraphs',
     license='MIT',
     author='Michael Parkes',
